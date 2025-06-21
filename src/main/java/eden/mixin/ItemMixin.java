@@ -18,8 +18,8 @@ import java.util.Set;
 
 @Mixin(Item.class)
 public class ItemMixin {
-    @Inject(method = "onStoppedUsing", at = @At("TAIL"))
 
+    @Inject(method = "onStoppedUsing", at = @At("TAIL"))
     private void KickedOut(ItemStack stack, World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
         if (!world.isClient) {
             if (stack.isOf(Items.APPLE) && user.getWorld().getDimensionEntry().getKey().equals(Optional.of(ModDimensions.SPACE_DIM_TYPE))) {

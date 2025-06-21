@@ -1,6 +1,6 @@
 package eden.datagen;
 
-import eden.block.ModBlocks;
+import eden.registry.EdenBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 
@@ -16,14 +16,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.HALO_FLOWER, ModBlocks.POTTED_HALO_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WINGED_BEAUTY, ModBlocks.POTTED_WINGED_BEAUTY, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.HALO_FLOWER, EdenBlocks.POTTED_HALO_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.WINGED_BEAUTY, EdenBlocks.POTTED_WINGED_BEAUTY, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_CARNATION, ModBlocks.POTTED_RED_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_CARNATION, ModBlocks.POTTED_BLUE_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WHITE_CARNATION, ModBlocks.POTTED_WHITE_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LILY, ModBlocks.POTTED_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DELPHINIUM, ModBlocks.POTTED_DELPHINIUM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.RED_CARNATION, EdenBlocks.POTTED_RED_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.BLUE_CARNATION, EdenBlocks.POTTED_BLUE_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.WHITE_CARNATION, EdenBlocks.POTTED_WHITE_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.LILY, EdenBlocks.POTTED_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(EdenBlocks.DELPHINIUM, EdenBlocks.POTTED_DELPHINIUM, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

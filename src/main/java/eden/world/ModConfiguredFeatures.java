@@ -1,9 +1,8 @@
 package eden.world;
 
 import eden.Eden;
-import eden.block.ModBlocks;
+import eden.registry.EdenBlocks;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -26,34 +25,34 @@ public class ModConfiguredFeatures {
 
         Object ModBlocks;
         register(context, HALO_FLOWER_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-        new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.HALO_FLOWER
+        new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.HALO_FLOWER
                 .getDefaultState())),
         List.of(Blocks.GRASS_BLOCK)));
 
         register(context, WINGED_BEAUTY_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.WINGED_BEAUTY
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.WINGED_BEAUTY
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
 
         register(context, RED_CARNATION_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.RED_CARNATION
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.RED_CARNATION
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
 
         register(context, WHITE_CARNATION_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.WHITE_CARNATION
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.WHITE_CARNATION
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
         register(context, BLUE_CARNATION_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.BLUE_CARNATION
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.BLUE_CARNATION
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
         register(context, LILY_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.LILY
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.LILY
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
         register(context, DELPHNIUM_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(eden.block.ModBlocks.DELPHINIUM
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.DELPHINIUM
                         .getDefaultState())),
                 List.of(Blocks.GRASS_BLOCK)));
     }
@@ -62,8 +61,8 @@ public class ModConfiguredFeatures {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Eden.MOD_ID, name));
     }
 
-    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
-                                                                                   RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
+    private static <C extends FeatureConfig, F extends Feature<C>> void register(Registerable<ConfiguredFeature<?, ?>> context,
+                                                                                   RegistryKey<ConfiguredFeature<?, ?>> key, F feature, C configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 }

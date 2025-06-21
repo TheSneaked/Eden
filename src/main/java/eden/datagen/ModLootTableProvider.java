@@ -1,6 +1,6 @@
 package eden.datagen;
 
-import eden.block.ModBlocks;
+import eden.registry.EdenBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,20 +17,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
 
 
-        addDrop(ModBlocks.HALO_FLOWER);
-        addPottedPlantDrops(ModBlocks.POTTED_HALO_FLOWER);
-        addDrop(ModBlocks.WINGED_BEAUTY);
-        addPottedPlantDrops(ModBlocks.POTTED_WINGED_BEAUTY);
-        addDrop(ModBlocks.BLUE_CARNATION);
-        addPottedPlantDrops(ModBlocks.POTTED_BLUE_CARNATION);
-        addDrop(ModBlocks.RED_CARNATION);
-        addPottedPlantDrops(ModBlocks.POTTED_RED_CARNATION);
-        addDrop(ModBlocks.WHITE_CARNATION);
-        addPottedPlantDrops(ModBlocks.POTTED_WHITE_CARNATION);
-        addDrop(ModBlocks.LILY);
-        addPottedPlantDrops(ModBlocks.POTTED_LILY);
-        addDrop(ModBlocks.DELPHINIUM);
-        addPottedPlantDrops(ModBlocks.POTTED_DELPHINIUM);
+        addDrop(EdenBlocks.HALO_FLOWER);
+        addPottedPlantDrops(EdenBlocks.POTTED_HALO_FLOWER);
+        addDrop(EdenBlocks.WINGED_BEAUTY);
+        addPottedPlantDrops(EdenBlocks.POTTED_WINGED_BEAUTY);
+        addDrop(EdenBlocks.BLUE_CARNATION);
+        addPottedPlantDrops(EdenBlocks.POTTED_BLUE_CARNATION);
+        addDrop(EdenBlocks.RED_CARNATION);
+        addPottedPlantDrops(EdenBlocks.POTTED_RED_CARNATION);
+        addDrop(EdenBlocks.WHITE_CARNATION);
+        addPottedPlantDrops(EdenBlocks.POTTED_WHITE_CARNATION);
+        addDrop(EdenBlocks.LILY);
+        addPottedPlantDrops(EdenBlocks.POTTED_LILY);
+        addDrop(EdenBlocks.DELPHINIUM);
+        addPottedPlantDrops(EdenBlocks.POTTED_DELPHINIUM);
     }
 
 }

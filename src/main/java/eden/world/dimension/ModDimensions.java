@@ -12,16 +12,17 @@ import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.dimension.DimensionTypes;
 
-
 import java.util.OptionalLong;
 
 public class ModDimensions {
+
     public static final RegistryKey<DimensionOptions> SPACE_KEY = RegistryKey.of(RegistryKeys.DIMENSION,
             Identifier.of(Eden.MOD_ID,"eden"));
     public static final RegistryKey<World> SPACE_LEVEL_KEY = RegistryKey.of(RegistryKeys.WORLD,
             Identifier.of(Eden.MOD_ID,"eden"));
     public static final RegistryKey<DimensionType> SPACE_DIM_TYPE = RegistryKey.of(RegistryKeys.DIMENSION_TYPE,
             Identifier.of(Eden.MOD_ID,"eden_type"));
+
     public static void bootstrapType(Registerable<DimensionType> context) {
         context.register(SPACE_DIM_TYPE,new DimensionType(
                 OptionalLong.of(12000),
@@ -40,4 +41,5 @@ public class ModDimensions {
                 1.0f,
                 new DimensionType.MonsterSettings(false,false, UniformIntProvider.create(0,0),0)));
     }
+
 }
