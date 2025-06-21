@@ -1,0 +1,54 @@
+{
+  "type": "eden:eden_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": {
+      "name": "minecraft:overworld",
+      "default_block": {
+        "Name": "minecraft:dirt"
+      },
+      "default_fluid": {
+        "Name": "minecraft:water"
+      },
+      "sea_level": 60,
+      "disable_mob_generation": true,
+      "aquifers_enabled": true,
+      "ore_veins_enabled": true,
+      "legacy_random_source": false,
+      "noise": {
+        "min_y": 0,
+        "height": 64,
+        "size_horizontal": 4,
+        "size_vertical": 1
+      },
+      "noise_router": {
+        "barrier": "minecraft:overworld_large_biomes/offset",
+        "fluid_level_floodedness": 2,
+        "fluid_level_spread": 2,
+        "lava": 0,
+        "vein_toggle": 1,
+        "vein_ridged": 1,
+        "vein_gap": 1,
+        "temperature": 0,
+        "vegetation": 2,
+        "continents": "minecraft:overworld/continents",
+        "erosion": "minecraft:overworld/erosion",
+        "depth": "minecraft:overworld/depth",
+        "ridges": "minecraft:overworld/ridges",
+        "initial_density_without_jaggedness": 2,
+        "final_density": 2
+      },
+      "spawn_target": [],
+      "surface_rule": {
+        "type": "minecraft:block",
+        "result_state": {
+          "Name": "minecraft:grass_block"
+        }
+      }
+    },
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:meadow"
+    }
+  }
+}

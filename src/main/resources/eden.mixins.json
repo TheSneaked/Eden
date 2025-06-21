@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "eden.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "ItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
