@@ -1,7 +1,7 @@
-package eden.world;
+package the.sneaked.eden.world;
 
-import eden.Eden;
-import eden.registry.EdenBlocks;
+import the.sneaked.eden.Eden;
+import the.sneaked.eden.registry.EdenBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -23,7 +23,6 @@ public class ModConfiguredFeatures {
     //CF -> PF -> BM
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
-        Object ModBlocks;
         register(context, HALO_FLOWER_KEY, Feature.RANDOM_PATCH,  ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
         new SimpleBlockFeatureConfig(BlockStateProvider.of(EdenBlocks.HALO_FLOWER
                 .getDefaultState())),

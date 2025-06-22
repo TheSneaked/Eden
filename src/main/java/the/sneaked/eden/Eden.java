@@ -1,9 +1,8 @@
-package eden;
+package the.sneaked.eden;
 
-import eden.registry.EdenBlocks;
-import eden.world.dimension.ModDimensions;
-import eden.world.gen.ModWorldGeneration;
-import net.fabricmc.api.ModInitializer;
+import the.sneaked.eden.registry.EdenBlocks;
+import the.sneaked.eden.world.dimension.ModDimensions;
+import the.sneaked.eden.world.gen.ModWorldGeneration;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;

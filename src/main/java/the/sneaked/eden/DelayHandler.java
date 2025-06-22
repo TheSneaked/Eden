@@ -1,4 +1,4 @@
-package eden;
+package the.sneaked.eden;
 
 public class DelayHandler {
 

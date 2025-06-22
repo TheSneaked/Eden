@@ -1,6 +1,6 @@
-package eden;
+package the.sneaked.eden;
 
-import eden.registry.EdenBlocks;
+import the.sneaked.eden.registry.EdenBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;

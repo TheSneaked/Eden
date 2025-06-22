@@ -1,6 +1,6 @@
-package eden.world.dimension;
+package the.sneaked.eden.world.dimension;
 
-import eden.Eden;
+import the.sneaked.eden.Eden;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;

@@ -1,6 +1,6 @@
-package eden.world.gen;
+package the.sneaked.eden.world.gen;
 
-import eden.world.ModPlacedFeatures;
+import the.sneaked.eden.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 

@@ -1,6 +1,6 @@
-package eden.mixin;
+package the.sneaked.eden.mixin;
 
-import eden.world.dimension.ModDimensions;
+import the.sneaked.eden.world.dimension.ModDimensions;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

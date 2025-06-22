@@ -1,6 +1,6 @@
-package eden.registry;
+package the.sneaked.eden.registry;
 
-import eden.Eden;
+import the.sneaked.eden.Eden;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import net.minecraft.block.*;

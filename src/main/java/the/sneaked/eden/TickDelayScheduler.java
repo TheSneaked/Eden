@@ -1,4 +1,4 @@
-package eden;
+package the.sneaked.eden;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
